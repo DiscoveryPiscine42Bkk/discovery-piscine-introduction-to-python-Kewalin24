@@ -1,4 +1,10 @@
-def upcase_it(s):
-    return s.upper()
+import sys
 
-print(upcase_it("hello"))
+def downcase_it(s):
+    return s.lower()
+
+if len(sys.argv) > 1:
+    for arg in sys.argv[1:]:
+        print(downcase_it(arg))
+else:
+    print("none")

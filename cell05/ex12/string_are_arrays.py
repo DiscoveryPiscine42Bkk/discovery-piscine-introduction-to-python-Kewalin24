@@ -3,7 +3,7 @@ import sys #python3
 if len(sys.argv) != 2:
     print("none")
 else:
-    inpot_string = sys.argv[1]
+    input_string = sys.argv[1]
     z_chars = [char for char in input_string if char == 'z']
     if z_chars:
         print(''.join(z_chars))
